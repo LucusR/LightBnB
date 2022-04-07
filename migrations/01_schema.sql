@@ -10,7 +10,7 @@ CREATE TABLE users (
   password VARCHAR(255) NOT NULL
 );
 
-CCREATE TABLE properties (
+CREATE TABLE properties (
   id SERIAL PRIMARY KEY NOT NULL,
   owner_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
 
